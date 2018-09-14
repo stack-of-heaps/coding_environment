@@ -4,8 +4,17 @@ if [ $1 ]
     then
         case "$1" in
             flip)
-            echo "Connecting to flip2..."A
+            echo "Connecting to flip2..."
             ssh karthauk@flip2.engr.oregonstate.edu
+            ;;
+        esac
+fi
+
+if [ $2 ]
+    then
+        case "$2" in
+            windir)
+            cd /mnt/c/
             ;;
         esac
 fi

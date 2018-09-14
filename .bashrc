@@ -8,6 +8,10 @@ case $- in
       *) return;;
 esac
 
+if [ -t 1 ]; then
+    exec zsh
+fi
+
 ~/z_config/z/z.sh
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -122,3 +126,5 @@ fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=$HOME/bin:$PATH
+
+alias windir='cd /mnt/c/Users/Kyle\ Karthauser/Documents/School'

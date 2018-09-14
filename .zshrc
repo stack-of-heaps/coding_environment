@@ -1,5 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/cs290/website/node_modules/node:$PATH
+export PATH=$HOME/cs290/website/node_modules/node/node_modules/http-server/bin:$PATH
+
+ZSH_DISABLE_COMPFIX=true
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/kak/.oh-my-zsh
@@ -61,7 +65,7 @@ $reset_color→ '
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
+plugins=( git zsh-better-npm-completion zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,3 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+alias windir="cd /mnt/c/Users/Kyle\ Karthauser/Documents/School"
